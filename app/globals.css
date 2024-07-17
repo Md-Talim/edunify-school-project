@@ -22,6 +22,7 @@
   --blue-500: #3b82f6;
   --blue-600: #2563eb;
   --blue-700: #1d4ed8;
+  --red-500: #ef4444;
 }
 
 /* Set up a base font and background */
@@ -121,4 +122,10 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+p.error {
+  color: var(--red-500);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
