@@ -1,0 +1,61 @@
+main {
+  margin: 0 auto;
+
+  h1 {
+    margin-block: 2rem;
+  }
+}
+
+.school-grid {
+  display: grid;
+  gap: 16px;
+
+  .school-card {
+    column-span: 1;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--zinc-900);
+    --ring-inset: inset;
+    --ring-color: var(--zinc-800);
+    --ring-offset-width: 1px;
+    box-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width)
+      var(--ring-color);
+
+    .school-image {
+      width: 100%;
+      border-radius: 8px;
+      background-size: contain;
+    }
+
+    > * + * {
+      margin-top: 1rem;
+    }
+
+    .info {
+      line-height: normal;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        color: var(--zinc-400);
+      }
+
+      > * + * {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .school-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .school-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
