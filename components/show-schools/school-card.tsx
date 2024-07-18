@@ -1,7 +1,11 @@
-import School from "@/types/School";
 import Image from "next/image";
 
-interface Props extends School {}
+interface Props {
+  name: string;
+  city: string;
+  address: string;
+  image: string;
+}
 
 export function SchoolCard({ name, address, city, image }: Props) {
   return (

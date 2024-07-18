@@ -1,11 +1,21 @@
-import { schools } from "@/app/schools/data";
+import { fetchAllSchools } from "@/lib/actions";
 import { SchoolCard } from "./school-card";
 
-export function ShowSchools() {
+export async function ShowSchools() {
+  const data = await fetchAllSchools();
+
+  console.log(data);
+
   return (
     <div className="school-grid">
-      {schools.map((school, index) => (
-        <SchoolCard key={index} {...school} />
+      {data.map((school, index) => (
+        <SchoolCard
+          key={index}
+          name={school.name}
+          city={school.city}
+          address={school.address}
+          image={school.image}
+        />
       ))}
     </div>
   );
