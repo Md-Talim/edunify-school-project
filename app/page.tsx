@@ -1,10 +1,15 @@
 import { AddSchoolForm } from "@/components/add-school-form";
+import Navbar from "@/components/navbar";
 import "./page.css";
 
 export default function Home() {
   return (
     <main>
-      <h1 className="form-title">Add a School</h1>
+      <Navbar
+        link="/schools"
+        linkTitle="View all schools"
+        title="Add a School"
+      />
 
       <AddSchoolForm />
     </main>

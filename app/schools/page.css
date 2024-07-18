@@ -1,12 +1,5 @@
 main {
   margin: 0 auto;
-
-  .top-bar {
-    margin-block: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 }
 
 .school-grid {

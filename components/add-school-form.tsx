@@ -2,7 +2,6 @@
 
 import { addSchool } from "@/lib/actions";
 import School from "@/types/School";
-import Link from "next/link";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
@@ -149,13 +148,10 @@ export function AddSchoolForm() {
         {errors.image && <p className="error">{errors.image.message}</p>}
       </div>
 
-      <div className="button-group">
+      <div>
         <button type="submit" className="btn-primary" disabled={isSubmitting}>
           {isSubmitting ? "Adding..." : "Add School"}
         </button>
-        <Link href="/schools" className="btn-navigation">
-          All Schools
-        </Link>
       </div>
     </form>
   );
