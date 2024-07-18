@@ -1,19 +1,10 @@
 "use client";
 
 import { addSchool } from "@/lib/actions";
+import School from "@/types/School";
 import Link from "next/link";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-
-interface School {
-  name: string;
-  address: string;
-  city: string;
-  state: string;
-  contact: string;
-  image: string;
-  email_id: string;
-}
 
 export function AddSchoolForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);

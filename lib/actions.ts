@@ -1,16 +1,7 @@
 "use server";
 
+import School from "@/types/School";
 import mysql from "mysql2/promise";
-
-interface School {
-  name: string;
-  address: string;
-  city: string;
-  state: string;
-  contact: string;
-  image: string;
-  email_id: string;
-}
 
 export async function addSchool(school: School) {
   try {

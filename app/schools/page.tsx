@@ -1,16 +1,9 @@
+import School from "@/types/School";
 import Image from "next/image";
 import { schools } from "./data";
 import "./page.css";
 
-interface Props {
-  name: string;
-  address: string;
-  city: string;
-  state: string;
-  contact: string;
-  image: string;
-  email: string;
-}
+interface Props extends School {}
 
 function SchoolCard({ name, address, city, image }: Props) {
   return (
