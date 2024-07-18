@@ -1,10 +1,8 @@
 import { fetchAllSchools } from "@/lib/actions";
-import { SchoolCard } from "./school-card";
+import SchoolCard from "./school-card";
 
-export async function ShowSchools() {
+const ShowSchools = async () => {
   const data = await fetchAllSchools();
-
-  console.log(data);
 
   return (
     <div className="school-grid">
@@ -19,4 +17,6 @@ export async function ShowSchools() {
       ))}
     </div>
   );
-}
+};
+
+export default ShowSchools;

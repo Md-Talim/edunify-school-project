@@ -10,14 +10,16 @@ export const metadata: Metadata = {
     "A School Directory app providing a user-friendly interface to add and view information about schools, including their name, address, city, state, contact details, and more.",
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
   );
-}
+};
+
+export default RootLayout;

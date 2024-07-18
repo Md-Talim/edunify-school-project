@@ -1,8 +1,8 @@
-import { AddSchoolForm } from "@/components/add-school-form";
+import AddSchoolForm from "@/components/add-school-form";
 import Navbar from "@/components/navbar";
 import "./page.css";
 
-export default function Home() {
+const HomePage = () => {
   return (
     <main>
       <Navbar
@@ -14,4 +14,6 @@ export default function Home() {
       <AddSchoolForm />
     </main>
   );
-}
+};
+
+export default HomePage;

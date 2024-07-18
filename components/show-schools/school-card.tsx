@@ -7,7 +7,7 @@ interface Props {
   image: string;
 }
 
-export function SchoolCard({ name, address, city, image }: Props) {
+const SchoolCard = ({ name, address, city, image }: Props) => {
   return (
     <article className="school-card">
       <Image
@@ -24,4 +24,6 @@ export function SchoolCard({ name, address, city, image }: Props) {
       </div>
     </article>
   );
-}
+};
+
+export default SchoolCard;

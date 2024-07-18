@@ -1,8 +1,8 @@
 import Navbar from "@/components/navbar";
-import { ShowSchools } from "@/components/show-schools";
+import ShowSchools from "@/components/show-schools";
 import "./page.css";
 
-export default function SchoolsPage() {
+const SchoolsPage = () => {
   return (
     <main className="container">
       <Navbar link="/" linkTitle="+ New School" title="All Schools" />
@@ -10,4 +10,6 @@ export default function SchoolsPage() {
       <ShowSchools />
     </main>
   );
-}
+};
+
+export default SchoolsPage;

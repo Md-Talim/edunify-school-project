@@ -5,7 +5,7 @@ import School from "@/types/School";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
-export function AddSchoolForm() {
+const AddSchoolForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const {
     register,
@@ -155,4 +155,6 @@ export function AddSchoolForm() {
       </div>
     </form>
   );
-}
+};
+
+export default AddSchoolForm;
