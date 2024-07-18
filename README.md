@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Edunify School Project
+
+## Table of Contents
+
+- [Project Description](#project-description)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Environment Variables](#environment-variables)
+  - [Running the Project](#running-the-project)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Project Description
+
+The Edunify School Project is a web application built with Next.js for managing a directory of schools. It allows users to add new schools, view a list of all schools, and manage the school data efficiently. The project integrates a MySQL database for storing school information.
+
+## Features
+
+- **Add School:** Users can add new schools to the directory by filling out a form.
+- **View Schools:** Users can view a list of all schools, including details like name, address, city, state, contact, email, and an image.
+- **Database Integration:** Uses MySQL for storing and retrieving school data.
+
+## Technologies Used
+
+- **Frontend:** Next.js, React, TypeScript, CSS
+- **Backend:** Next.js Server Components
+- **Database:** MySQL
+- **Deployment:** Vercel for deployment
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js and npm installed
+- MySQL database set up locally or remotely
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```sh
+   git clone https://github.com/Md-Talim/edunify-school-project.git
+   cd edunify-school-project
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   bun add
+   ```
+
+### Environment Variables
+
+Create a `.env.local` file in the root directory and add your database configuration:
+
+```plaintext
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=admin
+DB_PASS=••••••••
+DB_SCHEMA=your_schema
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the Project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Run the development server:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```sh
+   bun run dev
+   ```
 
-## Learn More
+2. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Navigate to the home page to see the list of schools.
+- Click "Add School" to submit the form and add a new school to the directory.
+- The form will require fields such as name, address, city, state, contact number, email, and an image URL.
