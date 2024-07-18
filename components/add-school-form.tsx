@@ -149,13 +149,13 @@ export function AddSchoolForm() {
         {errors.image && <p className="error">{errors.image.message}</p>}
       </div>
 
-      <div className="input-group">
+      <div className="button-group">
         <button type="submit" className="btn-primary" disabled={isSubmitting}>
           {isSubmitting ? "Adding..." : "Add School"}
         </button>
-        <button className="btn-secondary">
-          <Link href="schools">All Schools</Link>
-        </button>
+        <Link href="/schools" className="btn-navigation">
+          All Schools
+        </Link>
       </div>
     </form>
   );

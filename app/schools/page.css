@@ -1,8 +1,11 @@
 main {
   margin: 0 auto;
 
-  h1 {
+  .top-bar {
     margin-block: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 

@@ -31,6 +31,16 @@ main {
       }
     }
 
+    .button-group {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 16px;
+
+      > * {
+        flex: 1;
+      }
+    }
+
     .input {
       display: block;
       width: 100%;
@@ -49,23 +59,6 @@ main {
         --ring-offset-width: 2px;
         box-shadow: var(--ring-inset) 0 0 0 var(--ring-offset-width)
           var(--ring-color);
-      }
-    }
-
-    button,
-    a {
-      font-weight: 600;
-    }
-
-    .btn-secondary {
-      background-color: var(--zinc-200);
-
-      a {
-        color: var(--zinc-800);
-
-        &:hover {
-          text-decoration: none;
-        }
       }
     }
   }
